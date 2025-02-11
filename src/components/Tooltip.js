@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Tooltip = ({text, children}) => {
+const Tooltip = ({text, text2, children}) => {
 
   const [visible, setVisible] = useState(false)
   return (
@@ -10,8 +10,14 @@ const Tooltip = ({text, children}) => {
       onMouseLeave={() => setVisible(false)}
     >
       {children}
-      {visible && <p className="tooltiptext" style={{width: "100px", height: '50px', background:"red", borderRadius: '5px', padding: '5px', color:"white"}}>{text}</p>}
+      {visible && 
+      <div>
+        <p className="tooltiptext" style={{width: "100px", height: '50px', background:"red", borderRadius: '5px', padding: '5px', color:"white"}}>{text}</p>
+        
+      </div>
+      }
     </div>
+    
   );
 }
 

@@ -8,11 +8,11 @@ const App = () => {
   return (
     <div>
          <Tooltip text="This is a tooltip!">
-            <h2 className="tooltip">Hover over me</h2>
+            <h2 className="tooltipText">Hover over me</h2>
         </Tooltip>
 
         <Tooltip2 text="This is another tooltip">
-            <p className="tooltip">Hover over to see another tooltip</p>
+            <p className="tooltipText">Hover over to see another tooltip</p>
         </Tooltip2>
     </div>
   )

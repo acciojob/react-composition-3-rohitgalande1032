@@ -12,8 +12,7 @@ const Tooltip = ({text, text2, children}) => {
       {children}
       {visible && 
       <div>
-        <p className="tooltiptext" style={{width: "100px", height: '50px', background:"red", borderRadius: '5px', padding: '5px', color:"white"}}>{text}</p>
-        
+        <h2 className="tooltip" style={{width: "100px", height: '50px', background:"red", borderRadius: '5px', padding: '5px', color:"white"}}>{text}</h2>
       </div>
       }
     </div>
